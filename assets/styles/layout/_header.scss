@@ -1,0 +1,18 @@
+header  {
+    .container{
+
+        text-align: center;
+        color: $color4;
+        margin: 100px 0;
+    }
+    
+    p {
+        margin: 50px 0;
+    }
+
+    i {
+        border: 2px $color4 solid;
+        padding: 15px;
+        border-radius: 50%;
+    }
+}

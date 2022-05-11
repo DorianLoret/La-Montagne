@@ -1,0 +1,18 @@
+.stories {
+    width: 80%;
+    margin: 0 auto;
+    background: $color4;
+
+    .main-story {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        
+        h4 {
+            margin: 0;
+            font-weight: 200;
+            padding: 50px;
+        }
+    }
+}

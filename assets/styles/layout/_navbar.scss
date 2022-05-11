@@ -1,0 +1,40 @@
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(128, 128, 128, 0.31);
+    color: $color4;
+    .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-left {
+        display: flex;
+
+        .container1, .container2, .container3 {
+            margin: 0 20px 0 0;
+            cursor: pointer;
+        }
+
+        .container1:hover {
+            background: $color3;
+            color: $color1;
+        }
+        .container2:hover {
+            background: $color3;
+            color: $color1;
+        }
+        .container3:hover {
+            background: $color3;
+            color: $color1;
+        }
+    }
+    .nav-right {
+        display: flex;
+
+        i {
+            margin: 0 20px;
+        }
+    }
+}

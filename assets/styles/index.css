@@ -1,1 +1,136 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Light.ttf");
+}
+
+body {
+  background: url("../images/bg.jpg") fixed center/cover;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+body p {
+  line-height: 2px;
+}
+
+body h1, body h2, body h3, body label, body h6, body .button {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+body p, body h4, body h5 {
+  font-family: "Merriweather", sans-serif;
+}
+
+body label, body h6, body .button {
+  color: #090909;
+}
+
+header .container {
+  text-align: center;
+  color: whitesmoke;
+  margin: 100px 0;
+}
+
+header p {
+  margin: 50px 0;
+}
+
+header i {
+  border: 2px whitesmoke solid;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(128, 128, 128, 0.31);
+  color: whitesmoke;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-left .container1, nav .nav-left .container2, nav .nav-left .container3 {
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+
+nav .nav-left .container1:hover {
+  background: #e1dfdf;
+  color: #090909;
+}
+
+nav .nav-left .container2:hover {
+  background: #e1dfdf;
+  color: #090909;
+}
+
+nav .nav-left .container3:hover {
+  background: #e1dfdf;
+  color: #090909;
+}
+
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-right i {
+  margin: 0 20px;
+}
+
+.stories {
+  width: 80%;
+  margin: 0 auto;
+  background: whitesmoke;
+}
+
+.stories .main-story {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stories .main-story h4 {
+  margin: 0;
+  font-weight: 200;
+  padding: 50px;
+}
+/*# sourceMappingURL=index.css.map */
