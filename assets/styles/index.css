@@ -208,11 +208,11 @@ footer .container {
   margin: 30px auto;
   -webkit-filter: brightness(0.98);
           filter: brightness(0.98);
-  height: 530px;
+  height: 580px;
 }
 
 footer form, footer .contacts {
-  border: #e1dfdf 1px solid;
+  border-right: #e1dfdf 1px solid;
   width: 761px;
   padding: 30px 0;
 }
@@ -233,6 +233,10 @@ footer form .message {
   margin: 20px auto 60px auto;
 }
 
+footer form label {
+  margin-bottom: 10px;
+}
+
 footer form input {
   padding: 10px;
   -webkit-filter: brightness(0.98);
@@ -242,10 +246,54 @@ footer form input {
 footer form textarea {
   -webkit-filter: brightness(0.98);
           filter: brightness(0.98);
-  height: 150px;
+  height: 165 px;
+  resize: none;
 }
 
 footer form .button {
   margin: 0px 0 0 75px;
+}
+
+footer .contacts {
+  padding: 0;
+}
+
+.contacts .adress, .contacts .phone, .contacts .email, .contacts .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: #e1dfdf 1px solid;
+  height: 143px;
+}
+
+.contacts h6, .contacts p {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+
+.contacts h6 {
+  font-size: 0.9rem;
+  margin: 0 150px 0 30px;
+}
+
+.contacts p {
+  font-size: 0.9rem;
+}
+
+.contacts i {
+  margin: 0 10px 0 0;
+  border: #e1dfdf 1px solid;
+  width: 15px;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.contacts .social h6 {
+  margin: 0 140px 0 30px;
 }
 /*# sourceMappingURL=index.css.map */
