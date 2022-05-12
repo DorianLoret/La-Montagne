@@ -134,6 +134,7 @@ nav .nav-right i {
   width: 80%;
   margin: 0 auto;
   background: whitesmoke;
+  height: 1800px;
 }
 
 .stories .main-story {
@@ -177,5 +178,23 @@ nav .nav-right i {
 
 .stories p {
   font-style: italic;
+}
+
+.other-stories .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0;
+}
+
+.other-stories .left-story, .other-stories .right-story {
+  text-align: center;
+  border: #e1dfdf 1px solid;
+  height: 823px;
+}
+
+.other-stories .left-story p, .other-stories .right-story p {
+  line-height: 30px;
+  padding: 0px 140px;
 }
 /*# sourceMappingURL=index.css.map */

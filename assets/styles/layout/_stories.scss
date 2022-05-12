@@ -1,0 +1,16 @@
+.other-stories {
+    .container {
+        display: flex;
+        margin: 50px 0;
+    }
+    .left-story, .right-story {
+        text-align: center;
+        border: $color3 1px solid;
+        height: 823px;
+        
+        p {
+            line-height: 30px;
+            padding: 0px 140px;
+        }
+    }
+}
