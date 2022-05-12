@@ -52,4 +52,15 @@ body {
      label, h6, .button {
         color: $color1;
     }
+    .button {
+        font-weight: 900;
+        letter-spacing: 1px;
+        border: $color1 1px solid;
+        padding: 10px 40px;
+        transition: 0.4s;
+    }
+    .button:hover {
+        background: $color3;
+        color: $color4;
+    }
 }

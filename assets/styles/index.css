@@ -45,6 +45,20 @@ body label, body h6, body .button {
   color: #090909;
 }
 
+body .button {
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: #090909 1px solid;
+  padding: 10px 40px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .button:hover {
+  background: #e1dfdf;
+  color: whitesmoke;
+}
+
 header .container {
   text-align: center;
   color: whitesmoke;
@@ -132,5 +146,36 @@ nav .nav-right i {
   margin: 0;
   font-weight: 200;
   padding: 50px;
+  position: relative;
+}
+
+.stories .main-story h4:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 1px;
+  width: 500px;
+  background: #e1dfdf;
+  left: 60%;
+}
+
+.stories .main-story h4:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  height: 1px;
+  width: 500px;
+  background: #e1dfdf;
+  right: 60%;
+}
+
+.stories h2, .stories p, .stories img {
+  margin: 10px 0 50px 0;
+}
+
+.stories p {
+  font-style: italic;
 }
 /*# sourceMappingURL=index.css.map */

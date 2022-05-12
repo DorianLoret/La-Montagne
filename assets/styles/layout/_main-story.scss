@@ -13,6 +13,35 @@
             margin: 0;
             font-weight: 200;
             padding: 50px;
+            position: relative;
+        
         }
+        h4:after {
+            content:'';
+  position:absolute;
+  display:block;
+  top:50%;
+  height:1px;
+  width: 500px;
+  background: $color3;
+  left:60%;
+        }
+        h4:before {            
+            content:'';
+  position:absolute;
+  display:block;
+  top: 50%;
+  height:1px;
+  width: 500px;
+  background: $color3;
+  right: 60%;
+        }
+    }
+
+    h2, p, img {
+        margin: 10px 0 50px 0;
+    }
+    p {
+        font-style: italic;
     }
 }
