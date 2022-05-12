@@ -1,0 +1,37 @@
+footer {
+    .container {
+        display: flex;
+        width: 80%;
+        background: $color4;
+        margin: 30px auto;
+        filter: brightness(0.98);
+        height: 530px;
+    }
+    form, .contacts {
+        border: $color3 1px solid;
+        width: 761px;
+        padding: 30px 0;
+    }
+    form {
+        .email, .name, .message {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .message {
+            margin: 20px auto 60px auto;
+        }
+        input {
+            padding: 10px;
+            filter: brightness(0.98);
+        }
+        textarea {
+            filter: brightness(0.98);
+            height: 150px;
+        }
+        .button {
+            margin: 0px 0 0 75px;
+        }
+    }
+}
