@@ -28,10 +28,6 @@ body h1 {
   letter-spacing: 2px;
 }
 
-body p {
-  line-height: 2px;
-}
-
 body h1, body h2, body h3, body label, body h6, body .button {
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
@@ -94,6 +90,14 @@ nav .container {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 930px) {
+  nav .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 nav .nav-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +107,18 @@ nav .nav-left {
 nav .nav-left .container1, nav .nav-left .container2, nav .nav-left .container3 {
   margin: 0 20px 0 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+  nav .nav-left .container1, nav .nav-left .container2, nav .nav-left .container3 {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  nav .nav-left h3 {
+    font-size: 0.8rem;
+  }
 }
 
 nav .nav-left .container1:hover {
@@ -130,17 +146,23 @@ nav .nav-right i {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 930px) {
+  nav .nav-right i {
+    display: none;
+  }
+}
+
 .stories {
   width: 80%;
   margin: 0 auto;
   background: whitesmoke;
-  height: 1800px;
 }
 
 .stories .main-story {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  height: 50%;
 }
 
 .stories .main-story h4 {
@@ -156,9 +178,16 @@ nav .nav-right i {
   display: block;
   top: 50%;
   height: 1px;
-  width: 500px;
+  width: 50%;
   background: #e1dfdf;
   left: 60%;
+}
+
+@media screen and (max-width: 940px) {
+  .stories .main-story h4:after {
+    width: 30%;
+    left: 70%;
+  }
 }
 
 .stories .main-story h4:before {
@@ -167,9 +196,16 @@ nav .nav-right i {
   display: block;
   top: 50%;
   height: 1px;
-  width: 500px;
+  width: 50%;
   background: #e1dfdf;
   right: 60%;
+}
+
+@media screen and (max-width: 940px) {
+  .stories .main-story h4:before {
+    width: 30%;
+    right: 70%;
+  }
 }
 
 .stories h2, .stories p, .stories img {
@@ -180,6 +216,10 @@ nav .nav-right i {
   font-style: italic;
 }
 
+.stories img {
+  width: 80%;
+}
+
 .other-stories .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,16 +227,46 @@ nav .nav-right i {
   margin: 50px 0;
 }
 
+@media screen and (max-width: 811px) {
+  .other-stories .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .other-stories .container img {
+    width: 80%;
+  }
+}
+
 .other-stories .left-story, .other-stories .right-story {
   text-align: center;
   border: #e1dfdf 1px solid;
-  height: 823px;
   width: 761px;
+  height: 820px;
+}
+
+@media screen and (max-width: 811px) {
+  .other-stories .left-story, .other-stories .right-story {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+  }
 }
 
 .other-stories .left-story p, .other-stories .right-story p {
   line-height: 30px;
-  padding: 0px 140px;
+  padding: 0px 100px;
+}
+
+@media screen and (max-width: 811px) {
+  .other-stories .right-story {
+    border-top: none;
+  }
 }
 
 footer .container {
@@ -211,9 +281,19 @@ footer .container {
   height: 580px;
 }
 
+@media screen and (max-width: 800px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
 footer form, footer .contacts {
   border-right: #e1dfdf 1px solid;
-  width: 761px;
+  width: 100%;
   padding: 30px 0;
 }
 
@@ -229,18 +309,46 @@ footer form .email, footer form .name, footer form .message {
   margin: 20px auto;
 }
 
+@media screen and (max-width: 800px) {
+  footer form .email, footer form .name, footer form .message {
+    width: 75%;
+    margin: 20px;
+  }
+}
+
 footer form .message {
   margin: 20px auto 60px auto;
+}
+
+@media screen and (max-width: 800px) {
+  footer form .message {
+    width: 80%;
+    margin: 20px;
+  }
 }
 
 footer form label {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  footer form label {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
 footer form input {
   padding: 10px;
   -webkit-filter: brightness(0.98);
           filter: brightness(0.98);
+}
+
+@media screen and (max-width: 800px) {
+  footer form input {
+    width: 100%;
+    margin: 20px;
+  }
 }
 
 footer form textarea {
@@ -250,8 +358,22 @@ footer form textarea {
   resize: none;
 }
 
+@media screen and (max-width: 800px) {
+  footer form textarea {
+    width: 100%;
+    margin: 20px;
+    height: 200px;
+  }
+}
+
 footer form .button {
-  margin: 0px 0 0 75px;
+  margin: 0px 0 0 10%;
+}
+
+@media screen and (max-width: 800px) {
+  footer form .button {
+    margin: 0px 0 0 8%;
+  }
 }
 
 footer .contacts {
@@ -280,6 +402,12 @@ footer .contacts {
   margin: 0 150px 0 30px;
 }
 
+@media screen and (max-width: 800px) {
+  .contacts h6 {
+    margin: 0 30px 0 30px;
+  }
+}
+
 .contacts p {
   font-size: 0.9rem;
 }
@@ -295,5 +423,11 @@ footer .contacts {
 
 .contacts .social h6 {
   margin: 0 140px 0 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .contacts .social h6 {
+    margin: 0 20px 0 30px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

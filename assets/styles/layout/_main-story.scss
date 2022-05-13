@@ -2,12 +2,12 @@
     width: 80%;
     margin: 0 auto;
     background: $color4;
-    height: 1800px;
 
     .main-story {
         width: 80%;
         margin: 0 auto;
         text-align: center;
+        height: 50%;
 
         
         h4 {
@@ -23,19 +23,32 @@
   display:block;
   top:50%;
   height:1px;
-  width: 500px;
+  width: 50%;
   background: $color3;
   left:60%;
+
+  @media screen and (max-width: 940px) {
+      width: 30%;
+      left:70%;
+  }
+
+  
         }
         h4:before {            
             content:'';
   position:absolute;
   display:block;
   top: 50%;
-  height:1px;
-  width: 500px;
+  height: 1px;
+  width: 50%;
   background: $color3;
   right: 60%;
+
+  @media screen and (max-width: 940px) {
+    width: 30%;
+    right: 70%;
+}
+
         }
     }
 
@@ -44,5 +57,9 @@
     }
     p {
         font-style: italic;
+    }
+
+    img {
+        width: 80%;
     }
 }

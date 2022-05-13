@@ -6,10 +6,15 @@ footer {
         margin: 30px auto;
         filter: brightness(0.98);
         height: 580px;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            height: 100%;
+        }
     }
     form, .contacts {
         border-right: $color3 1px solid;
-        width: 761px;
+        width: 100%;
         padding: 30px 0;
     }
     form {
@@ -18,24 +23,57 @@ footer {
             flex-direction: column;
             width: 80%;
             margin: 20px auto;
+
+            @media screen and (max-width: 800px) {
+                width: 75%;
+                margin: 20px;
+            }
         }
         .message {
             margin: 20px auto 60px auto;
+
+            @media screen and (max-width: 800px) {
+                width: 80%;
+                margin: 20px;
+            }
         }
         label {
             margin-bottom: 10px;
+            
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                margin: 20px;
+            }
         }
         input {
             padding: 10px;
             filter: brightness(0.98);
+            
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                margin: 20px;
+            }
         }
         textarea {
             filter: brightness(0.98);
             height: 165 px;
             resize: none;
+
+            
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                margin: 20px;
+                height: 200px;
+            }
         }
         .button {
-            margin: 0px 0 0 75px;
+            margin: 0px 0 0 10%;
+
+            
+            @media screen and (max-width: 800px) {
+                
+            margin: 0px 0 0 8%;
+            }
         }
     }
 }
@@ -49,6 +87,9 @@ footer .contacts {
         align-items: center;
         border-top: $color3 1px solid;
         height: 143px;
+
+        
+        
     }
 
     h6, p {
@@ -59,6 +100,12 @@ footer .contacts {
     h6 {
         font-size: 0.9rem;
         margin: 0 150px 0 30px;
+
+        
+        @media screen and (max-width: 800px) {
+            
+        margin: 0 30px 0 30px;
+        }
     }
     p {
         font-size: 0.9rem;
@@ -72,6 +119,11 @@ footer .contacts {
         text-align: center;
     }
     .social h6 {
-        margin: 0 140px 0 30px;;
+        margin: 0 140px 0 30px;
+        
+        @media screen and (max-width: 800px) {
+                
+            margin: 0 20px 0 30px;
+            }
     }
 }

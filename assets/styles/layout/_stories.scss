@@ -2,16 +2,41 @@
     .container {
         display: flex;
         margin: 50px 0;
+
+        @media screen and (max-width: 811px) {
+            flex-direction: column;
+        }
+
+        img {
+            @media screen and (max-width: 811px) {
+                width: 80%;;
+            }            
+        }
     }
     .left-story, .right-story {
         text-align: center;
         border: $color3 1px solid;
-        height: 823px;
         width: 761px;
+        height: 820px;
+
+        
+        @media screen and (max-width: 811px) {
+            width: 100%;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        } 
         
         p {
             line-height: 30px;
-            padding: 0px 140px;
+            padding: 0px 100px;
         }
     }
+
+    .right-story {
+        @media screen and (max-width: 811px) {
+        border-top: none;
+    }
+}
+
 }
